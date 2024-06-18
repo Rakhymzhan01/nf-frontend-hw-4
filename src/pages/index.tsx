@@ -9,7 +9,7 @@ const Home = () => {
     const { data: products, isLoading, error } = useQuery('products', fetchProducts);
 
     if (isLoading) return <div className="flex justify-center items-center h-screen">Loading...</div>;
-    if (error) return <div className="text-red-500 text-center mt-4">An error occurred: {error.message}</div>;
+    if (error) return <div className="text-red-500 text-center mt-4">An error occurred</div>;
 
     return (
         <>
