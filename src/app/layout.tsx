@@ -12,7 +12,7 @@ const chivo = Chivo({
   variable: '--font-chivo',
 })
 
-export default function Layout({ children }) {
+export default function Layout({ children }:any) {
   return (
     <html lang="en">
       <body className={libre_franklin.variable + ' ' + chivo.variable}>
